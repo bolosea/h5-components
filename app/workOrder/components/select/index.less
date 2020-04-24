@@ -1,0 +1,76 @@
+.select{
+  background-color: #fff;
+  color: #333333;
+  padding: .3rem;
+  font-family: PingFangSC-Regular;
+
+  .title-wrap{
+    display: flex;
+    justify-content: space-between;
+    font-size: .3rem;
+    margin-bottom: .3rem;
+    img{
+      width: .44rem;
+      height: .44rem;
+    }
+  }
+  .items{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    height: 1.8rem;
+    overflow: hidden;
+    span{
+      font-size: .28rem;
+      height: .64rem;
+      width: 30%;
+      text-align: center;
+      line-height: .64rem;
+      background: #F8F7F5;
+      border-radius: .1rem;
+      margin-bottom: .3rem;
+      margin-left: .2rem;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      &.selected{
+        //color: #FF9000;
+        background-image: linear-gradient(90deg, #FEEDD7 7%, #FFD69F 100%);
+      }
+    }
+  }
+  .subModal{
+    position: relative;
+    opacity: 0.4;
+    background: #000000;
+    border-radius: .1rem;
+    display: flex;
+    flex-wrap: wrap;
+    .sub{
+      width: 30%;
+      height: .72rem;
+      margin: .2rem;
+      display: flex;
+      color: #333333;
+      font-size: .24rem;
+      background: #FFFFFF;
+      align-items: center;
+      border-radius: .1rem;
+      justify-content: center;
+      &.selected{
+        color: #FF9000;
+        border: 1px solid #FF9000;
+      }
+    }
+    .arrow{
+      position: absolute;
+      width: 0;
+      height: 0;
+      left: 1rem;
+      top: -.2rem;
+      border: .2rem solid;
+      border-top: none;
+      border-color: transparent transparent #000000;
+    }
+  }
+}

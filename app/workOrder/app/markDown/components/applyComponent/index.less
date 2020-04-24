@@ -1,0 +1,80 @@
+.apply-component{
+    padding: .3rem;
+    background-color: #fff;
+    img {
+        width: .44rem;
+        height: .44rem;
+        // vertical-align: bottom;
+    }
+    .apply-select{
+        width: 100%;
+        height: .8rem;
+        background: #F8F7F5;
+        border-radius: .1rem;
+        color: #333333;
+        padding: 0 .3rem;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        
+    }
+    .op-modal{
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0,0,0,0.60);
+        z-index: 998;
+        .op-modal-wrapper{
+            position: absolute;
+            background-color: #ffffff;
+            //   border-top-left-radius: .1rem;
+            //   border-top-right-radius: .1rem;
+            width: 100%;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            .content {
+                padding: .3rem;
+            }
+            p {
+                height: .9rem;
+                line-height: .9rem;
+                color: #999999;
+                border-bottom: .01rem solid #dfdfdf;
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                justify-content: space-between;
+                padding-right: .3rem;
+                // box-shadow: inset 0 -1px 0 0 #DDDDDD;
+                &:first-child {
+                    font-size: .3rem;
+                    color: #333333;
+                }
+                &:last-child {
+                    border: none;
+                }
+            }
+            .footer{
+                width: 100%;
+                display: flex;
+                height: .88rem;
+                button{
+                  outline: none;
+                  width: 50%;
+                  border: .01rem solid #FF9000;
+                  font-size: .32rem;
+                  color: #FF9000;
+                  background-color: #fff;
+                  &:last-child{
+                    background-color: #FF9000;
+                    color: #fff
+                  }
+                }
+              }
+        }
+    }
+}

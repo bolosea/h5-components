@@ -1,0 +1,43 @@
+.list{
+  padding: .2rem;
+  .item{
+    background-color: #fff;
+    border-radius: .1rem;
+    box-shadow: 0 .02rem .06rem 0 ;
+    margin-bottom: .2rem;
+    .title{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0 .2rem;
+      font-size: .3rem;
+      color: #333333;
+      height: .9rem;
+      border-bottom: .01rem solid #DFDFDF;
+      .status{
+        color: #FF9000;
+      }
+    }
+    .detail-title{
+      &:before{
+        content: '';
+        background: #FF9000;
+        height: .3rem;
+        width: .05rem;
+        margin-right: .15rem;
+      }
+    }
+    .detail{
+      padding: .3rem .2rem;
+      background-color: #fff;
+      p{
+        font-size: .28rem;
+        color: #999999;
+        margin-bottom: .3rem;
+        &:last-child{
+          margin-bottom: 0;
+        }
+      }
+    }
+  }
+}

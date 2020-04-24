@@ -1,0 +1,146 @@
+.send{
+  .react-tabs__tab{
+    background: #fff;
+  }
+  .react-tabs__tab:focus{
+    box-shadow: none;
+    border-color: transparent;
+    outline: initial;
+  }
+  .react-tabs__tab:focus:after{
+    content: initial;
+  }
+  .react-tabs__tab-list{
+    display: flex;
+    font-size: .32rem;
+    border-bottom: none;
+    margin-bottom: .2rem;
+    li{
+      width: 50%;
+      text-align: center;
+      height: 1rem;
+      line-height: 1rem;
+      border: none;
+      color: #999999;
+      &.react-tabs__tab--selected{
+        border-bottom: 2px solid #CFAD60;
+        color: #56270A;
+      }
+    }
+  }
+  .react-tabs__tab-panel{
+    background:rgba(247,247,247,1);
+    border-top: 1px solid transparent;
+    height: 100vh;
+    .card{
+      margin: 0 .2rem;
+      padding: .2rem;
+      height: 1.9rem;
+      margin-top: .2rem;
+      background: #fff;
+      img{
+        height: .26rem;
+        margin-bottom: .19rem;
+        display: block;
+      }
+      p.home{
+        display: flex;
+        justify-content: space-between;
+        color: #999999;
+        font-size: .28rem;
+        span.status4{
+          color: #EA8231;
+        }
+      }
+      p.time{
+        color: #666666;
+        font-size: .28rem;
+      }
+      p.op{
+        display: flex;
+        flex-direction: row-reverse;
+        margin-top: .2rem;;
+        button{
+          display: block;
+          height: .56rem;
+          border-radius: 0.08rem;
+          font-size: .28rem;
+          color: #56270A;
+          border:1px solid rgba(234,130,49,1);
+          background: #fff;
+          outline: none;
+          cursor: pointer;
+          width: 1.2rem;
+          &.send-btn{
+            width: 1.48rem;
+            background: linear-gradient(90deg,rgba(241,166,92,1) 0%,rgba(235,135,57,1) 100%);
+            color: #fff;
+            margin-left: .2rem;
+          }
+          &.cancle{
+            width: 1.5rem;
+            width: auto;
+          }
+        }
+      }
+      p.status4{
+        display: flex;
+        flex-direction: column;
+        margin-top: .24rem;
+        color: #333333;
+        font-size: .28rem;
+        span{
+          margin-top: .15rem;
+        }
+      }
+    }
+    .card.status4{
+      height: 2.3rem;
+    }
+  }
+  .empty{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: .2rem;
+  }
+}
+
+//覆盖ant-mobile样式
+.am-modal{
+  width: 100%;
+  margin: 0 .55rem;
+  height: 4.14rem;
+  border-radius: .1rem;
+  .am-modal-header{
+    color: #333333;
+    font-size: 34px;
+    border-bottom: 1px solid #E4E4E4;
+  }
+  .am-modal-body{
+    height: 2rem;
+    line-height: 7.5;
+    color: #666666;
+    font-size: .28rem;
+    overflow: hidden;
+  }
+  .am-modal-button-group-h{
+    margin: 0 .48rem;
+  }
+  .am-modal-button{
+    display: block;
+    width: 2.6rem;
+    height: .9rem;
+    border-radius: .2rem;
+    background:linear-gradient(270deg,rgba(234,130,49,1) 0%,rgba(242,170,96,1) 100%);
+    color: #fff;
+  }
+  .am-modal-button:first-child{
+    margin-right: .24rem;
+    color:  #EA8231;
+    border: 1px solid rgba(234,130,49,1);
+    background: #fff;
+    
+  }
+}
